@@ -13,7 +13,7 @@ public class GildedRose {
 	 */
 	public static void main(String[] args) {
 		
-        System.out.println("OMGHAI!");
+        System.out.print("OMGHAI!\n");
 		
         items = new ArrayList<Item>();
         items.add(new Item("+5 Dexterity Vest", 10, 20));
@@ -82,10 +82,7 @@ public class GildedRose {
                     {
                         if (items.get(i).getQuality() > 0)
                         {
-                            if (!"Sulfuras, Hand of Ragnaros".equals(items.get(i).getName()))
-                            {
                                 items.get(i).setQuality(items.get(i).getQuality() - 1);
-                            }
                         }
                     }
                     else
